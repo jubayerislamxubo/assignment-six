@@ -32,7 +32,7 @@ function App() {
     <div className="bg-slate-50 min-h-screen">
       <ToastContainer position="top-right" autoClose={1500} />
 
-      {/* Navbar */}
+      
       <nav className="navbar bg-white shadow-sm px-10 sticky top-0 z-50">
         <div className="flex-1 font-black text-2xl text-primary">DigiTools</div>
         <div className="flex-none font-bold">Cart: {cart.length}</div>
@@ -57,7 +57,7 @@ function App() {
         </div>
       </div>
 
-      {/* Banner */}
+      
       <section className="bg-indigo-600 text-white py-16 px-5 text-center">
          <h1 className="text-5xl font-extrabold mb-4">Premium Digital Tools</h1>
          <p className="text-xl opacity-80 mb-6">Level up your productivity with AI tools.</p>
@@ -67,13 +67,13 @@ function App() {
          </div>
       </section>
 
-      {/* Toggle Buttons */}
+     
       <div className="flex justify-center gap-4 my-10">
         <button onClick={() => setActiveTab('product')} className={`btn btn-lg ${activeTab==='product'?'btn-primary':'btn-outline'}`}>Products</button>
         <button onClick={() => setActiveTab('cart')} className={`btn btn-lg ${activeTab==='cart'?'btn-primary':'btn-outline'}`}>Cart ({cart.length})</button>
       </div>
 
-      {/* Content */}
+     
       <main className="max-w-7xl mx-auto px-5 pb-20">
         {activeTab === 'product' ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
