@@ -33,29 +33,103 @@ function App() {
       <ToastContainer position="top-right" autoClose={1500} />
 
       
-      <nav className="navbar bg-white shadow-sm px-10 sticky top-0 z-50">
-        <div className="flex-1 font-black text-2xl text-primary">DigiTools</div>
-        <div className="flex-none font-bold">Cart: {cart.length}</div>
-      </nav>
-      
-      
-      <div className="relative w-full h-[300px] md:h-[400px] mb-8 overflow-hidden rounded-2xl shadow-xl px-4 mt-4">
-        <img 
-          src="assets/banner.png" 
-          alt="Shop Banner" 
-          className="w-full h-full object-cover rounded-2xl"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent flex items-center p-10 rounded-2xl mx-4">
-          <div className="text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">Welcome to Our Shop</h1>
-            
-            <p className="text-lg opacity-90">Find the best tools to boost your productivity</p>
+      <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 py-4">
+  <div className="container mx-auto px-10 flex items-center justify-between">
+    {/* 1. Logo (Left) */}
+    <div className="text-3xl font-extrabold text-[#7C3AED]">
+      DigiTools
+    </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-2 py-12">JUBAYER</h1>
-            
-          </div>
+    {/* 2. Menu Links (Center) - Desktop Only */}
+    <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+      <a href="#" className="hover:text-[#7C3AED] transition">Products</a>
+      <a href="#" className="hover:text-[#7C3AED] transition">Features</a>
+      <a href="#" className="hover:text-[#7C3AED] transition">Pricing</a>
+      <a href="#" className="hover:text-[#7C3AED] transition">Testimonials</a>
+      <a href="#" className="hover:text-[#7C3AED] transition">FAQ</a>
+    </div>
+
+    {/* 3. Action Buttons (Right) */}
+    <div className="flex items-center gap-6">
+      {/* Cart with Icon */}
+      <button className="flex items-center gap-2 text-gray-700 hover:text-[#7C3AED] transition relative">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+        <span className="font-medium text-sm">Cart ({cart.length})</span>
+      </button>
+
+      {/* Login */}
+      <button className="text-sm font-semibold text-gray-700 hover:text-[#7C3AED] transition">
+        Login
+      </button>
+
+      {/* Get Started Button */}
+      <button className="bg-[#7C3AED] text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-[#7C3AED]/30 hover:bg-[#6D28D9] transition">
+        Get Started
+      </button>
+    </div>
+  </div>
+</nav>
+      
+      
+      
+<section className="bg-white pt-16 pb-12">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      
+      <div className="space-y-6">
+       
+        <div className="inline-flex items-center gap-2 bg-[#F3F4F6] text-[#7C3AED] px-3 py-1.5 rounded-full text-xs font-semibold">
+          <span className="w-2.5 h-2.5 rounded-full bg-[#7C3AED]"></span>
+          <span>New: AI-Powered Tools Available</span>
+        </div>
+
+      
+        <h1 className="text-5xl md:text-6xl font-extrabold text-[#0F172A] leading-tight">
+          Supercharge Your Digital Workflow
+        </h1>
+
+       
+        <p className="text-gray-600 text-lg max-w-xl">
+          Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
+        </p>
+        
+       
+        <div className="mt-2 mb-6">
+          <a href="#" className="text-[#7C3AED] font-medium text-sm flex items-center gap-1.5 hover:underline">
+            Explore Products
+          </a>
+        </div>
+
+        
+        <div className="flex flex-wrap gap-4 items-center">
+          <button className="bg-[#7C3AED] text-white px-8 py-3 rounded-full font-bold hover:bg-[#6D28D9] transition shadow-lg shadow-[#7C3AED]/20">
+            Explore Products
+          </button>
+          <button className="flex items-center gap-2 text-[#7C3AED] px-8 py-3 rounded-full font-semibold border border-[#E5E7EB] hover:bg-[#F9FAFB] transition">
+            <span className="w-5 h-5 flex items-center justify-center border-2 border-[#7C3AED] rounded-full text-xs">▶</span>
+            <span>Watch Demo</span>
+          </button>
         </div>
       </div>
+
+      
+      <div className="flex justify-center md:justify-end">
+        <div className="relative rounded-2xl overflow-hidden max-w-md shadow-2xl shadow-[#E5E7EB]">
+          
+          <img 
+            src="assets/banner.png" 
+            alt="Digital Workflow Visualization" 
+            className="w-full object-cover" 
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       
       <section className="bg-indigo-600 text-white py-16 px-5 text-center">
