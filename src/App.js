@@ -3,12 +3,12 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; 
 const productsData = [
     
-  { id: 1, name: "Search Optimizer", price: 50.99, tag: "Popular", features: ["Weekly Report", "24/7 Support"], icon: "/assets/rocket.png" },
-  { id: 2, name: "Graphic Canvas", price: 29.00, tag: "New", features: ["100+ Templates", "Vector Art"], icon: "/assets/package.png" },
-  { id: 3, name: "Video Editor", price: 89.00, tag: "Best Seller", features: ["Stock Music", "Cloud Sync"], icon: "/assets/Play.png" },
-  { id: 4, name: "Code Debugger", price: 15.00, tag: "Essential", features: ["Instant Fix", "Multiple Languages"], icon: "/assets/user.png" },
-  { id: 5, name: "Email Automator", price: 35.50, tag: "Hot", features: ["Bulk Send", "Custom Templates"], icon: "/assets/design-tool.png" },
-  { id: 6, name: "Cloud Hosting", price: 120.00, tag: "Enterprise", features: ["Unlimited Bandwidth", "SSH Access"], icon: "/assets/operation.png" }
+  { id: 1, name: "Search Optimizer", price: 50.99, tag: "Popular", features: ["Weekly Report", "24/7 Support"], icon: "assets/rocket.png" },
+  { id: 2, name: "Graphic Canvas", price: 29.00, tag: "New", features: ["100+ Templates", "Vector Art"], icon: "assets/package.png" },
+  { id: 3, name: "Video Editor", price: 89.00, tag: "Best Seller", features: ["Stock Music", "Cloud Sync"], icon: "assets/Play.png" },
+  { id: 4, name: "Code Debugger", price: 15.00, tag: "Essential", features: ["Instant Fix", "Multiple Languages"], icon: "assets/user.png" },
+  { id: 5, name: "Email Automator", price: 35.50, tag: "Hot", features: ["Bulk Send", "Custom Templates"], icon: "assets/design-tool.png" },
+  { id: 6, name: "Cloud Hosting", price: 120.00, tag: "Enterprise", features: ["Unlimited Bandwidth", "SSH Access"], icon: "assets/operation.png" }
   
 ];
 
@@ -41,7 +41,7 @@ function App() {
       
       <div className="relative w-full h-[300px] md:h-[400px] mb-8 overflow-hidden rounded-2xl shadow-xl px-4 mt-4">
         <img 
-          src="/assets/banner.png" 
+          src="assets/banner.png" 
           alt="Shop Banner" 
           className="w-full h-full object-cover rounded-2xl"
         />
