@@ -35,12 +35,12 @@ function App() {
       
       <nav className="bg-white border-b border-gray-100 sticky top-0 z-50 py-4">
   <div className="container mx-auto px-10 flex items-center justify-between">
-    {/* 1. Logo (Left) */}
+    
     <div className="text-3xl font-extrabold text-[#7C3AED]">
       DigiTools
     </div>
 
-    {/* 2. Menu Links (Center) - Desktop Only */}
+    
     <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
       <a href="#" className="hover:text-[#7C3AED] transition">Products</a>
       <a href="#" className="hover:text-[#7C3AED] transition">Features</a>
@@ -49,9 +49,9 @@ function App() {
       <a href="#" className="hover:text-[#7C3AED] transition">FAQ</a>
     </div>
 
-    {/* 3. Action Buttons (Right) */}
+   
     <div className="flex items-center gap-6">
-      {/* Cart with Icon */}
+    
       <button className="flex items-center gap-2 text-gray-700 hover:text-[#7C3AED] transition relative">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -59,12 +59,12 @@ function App() {
         <span className="font-medium text-sm">Cart ({cart.length})</span>
       </button>
 
-      {/* Login */}
+     
       <button className="text-sm font-semibold text-gray-700 hover:text-[#7C3AED] transition">
         Login
       </button>
 
-      {/* Get Started Button */}
+     
       <button className="bg-[#7C3AED] text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-[#7C3AED]/30 hover:bg-[#6D28D9] transition">
         Get Started
       </button>
@@ -263,7 +263,6 @@ function App() {
   </div>
 </section>
 
-{/* Ready To Transform Section */}
 <section className="bg-[#7C3AED] py-20 text-center text-white">
   <div className="container mx-auto px-4">
     <h2 className="text-4xl font-bold mb-4">Ready To Transform Your Workflow?</h2>
